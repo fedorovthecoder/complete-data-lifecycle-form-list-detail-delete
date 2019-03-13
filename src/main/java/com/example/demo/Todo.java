@@ -12,7 +12,7 @@ public class Todo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private long id;
 
     @NotNull
     @Size(min=4)
@@ -26,11 +26,11 @@ public class Todo {
     @Size(min=3)
     private String priority;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
